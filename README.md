@@ -1,7 +1,7 @@
 
 # Lexical Analyzer
 
-A lexical analyzer written in C using flex library to tokenize C++ code.
+A lexical analyzer written in C using Flex library to tokenize C++ code.
 
 ## Authors
 
