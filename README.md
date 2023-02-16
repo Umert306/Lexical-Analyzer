@@ -10,4 +10,5 @@ A lexical analyzer written in C using flex library to tokenize C++ code.
 - [Mohammad-Omar-Khan](https://github.com/Mohammad-Omar-Khan)
 
 ## 
-Flex file for windows is also attached
+- Flex file for windows is also attached
+- Sample C++ files and result text file is also included
