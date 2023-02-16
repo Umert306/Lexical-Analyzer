@@ -1,0 +1,133 @@
+	FILE 1				Line Number: 0		Sample1.cpp
+
+	Comment				Line Number: 1		//This code is used to test the lexical analyzer
+	Header				Line Number: 3		#include <iostream>
+	Namespace			Line Number: 4		using namespace std
+	Class				Line Number: 6		class Calculator
+	Brackets			Line Number: 7		{
+	Reserved Word		Line Number: 8		public
+	Declare Function	Line Number: 10		void Add(int a, int b)
+	Brackets			Line Number: 10		{
+	Reserved Word		Line Number: 10		cout
+	Operator			Line Number: 10		<<
+	Character			Line Number: 10		a
+	Operator			Line Number: 10		+
+	Character			Line Number: 10		b
+	Brackets			Line Number: 10		}
+	Declare Function	Line Number: 12		void Subtract(int a, int b)
+	Brackets			Line Number: 12		{
+	Reserved Word		Line Number: 12		cout
+	Operator			Line Number: 12		<<
+	Character			Line Number: 12		a
+	Character			Line Number: 12		-
+	Character			Line Number: 12		b
+	Brackets			Line Number: 12		}
+	Declare Function	Line Number: 14		void Multiply(int a, int b)
+	Brackets			Line Number: 14		{
+	Reserved Word		Line Number: 14		cout
+	Operator			Line Number: 14		<<
+	Character			Line Number: 14		a
+	Operator			Line Number: 14		*
+	Character			Line Number: 14		b
+	Brackets			Line Number: 14		}
+	Declare Function	Line Number: 16		void Divide(int a, int b)
+	Brackets			Line Number: 17		{
+	Reserved Word		Line Number: 18		if
+	Condition			Line Number: 18		(b != 0)
+	Reserved Word		Line Number: 19		cout
+	Operator			Line Number: 19		<<
+	Character			Line Number: 19		a
+	Character			Line Number: 19		/
+	Character			Line Number: 19		b
+	Reserved Word		Line Number: 21		else
+	Reserved Word		Line Number: 22		cout
+	Operator			Line Number: 22		<<
+	String				Line Number: 22		"Denominator cannot be 0!"
+	Brackets			Line Number: 23		}
+	Brackets			Line Number: 24		}
+	Declare Function	Line Number: 26		int main()
+	Brackets			Line Number: 27		{
+	Variable			Line Number: 28		Calculator
+	Variable			Line Number: 28		Obj
+	Function Call		Line Number: 29		Obj.Add(3, 4)
+	Reserved Word		Line Number: 30		return
+	Boolean				Line Number: 30		0
+	Brackets			Line Number: 31		}
+	
+
+	FILE 2				Line Number: 0		Sample2.cpp
+
+	Comment				Line Number: 1		// This code is used to test lexical analyzer
+	Header				Line Number: 3		#include <iostream>
+	Namespace			Line Number: 4		using namespace std
+	Structure			Line Number: 6		struct Node
+	Brackets			Line Number: 7		{
+	Datatype			Line Number: 8		int
+	Variable			Line Number: 8		Data
+	Variable			Line Number: 9		Node
+	Operator			Line Number: 9		*
+	Variable			Line Number: 9		Next
+	Brackets			Line Number: 10		}
+	Declare Function	Line Number: 12		void Insert(Node* Head, int NewData)
+	Brackets			Line Number: 13		{
+	Variable			Line Number: 14		Node
+	Operator			Line Number: 14		*
+	Variable			Line Number: 14		NewNode
+	Operator			Line Number: 14		=
+	Reserved Word		Line Number: 14		new
+	Variable			Line Number: 14		Node
+	Pointer				Line Number: 15		NewNode->Data
+	Operator			Line Number: 15		=
+	Variable			Line Number: 15		NewData
+	Pointer				Line Number: 16		NewNode->Next
+	Operator			Line Number: 16		=
+	Variable			Line Number: 16		NULL
+	Variable			Line Number: 18		Node
+	Operator			Line Number: 18		*
+	Variable			Line Number: 18		Temp
+	Operator			Line Number: 18		=
+	Variable			Line Number: 18		Head
+	Reserved Word		Line Number: 20		while
+	Condition			Line Number: 20		(Temp != NULL)
+	Variable			Line Number: 21		Temp
+	Operator			Line Number: 21		=
+	Pointer				Line Number: 21		Temp->Next
+	Variable			Line Number: 23		Temp
+	Operator			Line Number: 23		=
+	Variable			Line Number: 23		NewNode
+	Brackets			Line Number: 24		}
+	Declare Function	Line Number: 26		int main()
+	Brackets			Line Number: 27		{
+	Variable			Line Number: 28		Node
+	Operator			Line Number: 28		*
+	Variable			Line Number: 28		Head
+	Function Call		Line Number: 29		Insert(Head, 3)
+	Function Call		Line Number: 30		Insert(Head, 7)
+	Reserved Word		Line Number: 31		return
+	Boolean				Line Number: 31		0
+	Brackets			Line Number: 32		}
+	
+
+	FILE 3				Line Number: 0		Sample3.cpp
+
+	Comment				Line Number: 1		/* This code is used to test the lexical analyzer */
+	Template			Line Number: 3		template <typename t>
+	Inheritance			Line Number: 5		class Derived : public Base
+	Brackets			Line Number: 6		{
+	Brackets			Line Number: 8		}
+	Friend Function		Line Number: 10		friend void Func(int x, int y)
+	Friend Class		Line Number: 12		friend class Derived
+	
+
+	FILE 4				Line Number: 0		Sample4.cpp
+
+	Comment				Line Number: 1		/*this is a multiline comment and
+   											the following is code to test the
+											lexical analyzer
+											*/
+	Inheritance			Line Number: 3		class temp : private temp1, public temporary2
+	Brackets			Line Number: 4		{
+	Brackets			Line Number: 5		}
+	Friend Function		Line Number: 7		friend void funcName(int a, int b)
+	Friend Class		Line Number: 8		friend class temp1
+	Pointer				Line Number: 9		temp1->temp2
